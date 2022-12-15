@@ -3,7 +3,7 @@ package com.driver;
 public class Pizza {
 
     private int price;    // calculating final bill price
-    private Boolean isVeg;
+    private boolean isVeg;
     private String bill;
 
      private int cheesePrice;
@@ -19,6 +19,9 @@ public class Pizza {
 
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
+        this.isCheeseAdded= false;
+        this.isTakeAwayAdded= false;
+        this.isToppingsAdded=false;
 
         this.cheesePrice = 80;
         this.takeAwayPrice = 20;
@@ -33,9 +36,7 @@ public class Pizza {
 
         }
 
-        this.isCheeseAdded= false;
-        this.isTakeAwayAdded= false;
-        this.isToppingsAdded=false;
+
 
         this.bill = "Base Price Of The Pizza: "+ this.price+ "\n";
         // your code goes here
@@ -77,6 +78,7 @@ public class Pizza {
         // your code goes here
 
         if(isBillGenerated == false){
+
             if(isCheeseAdded== true){
                 this.bill = this.bill + "Extra Cheese Added: " + this.cheesePrice +"\n";
 
