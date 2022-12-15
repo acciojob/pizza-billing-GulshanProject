@@ -10,10 +10,10 @@ public class Pizza {
      private int toppingsPrice;
      private int takeAwayPrice;
 
-     boolean isCheeseAdded;
-     boolean isToppingsAdded;
-     boolean isTakeAwayAdded;
-     boolean isBillGenerated;
+    private boolean isCheeseAdded;
+    private boolean isToppingsAdded;
+     private boolean isTakeAwayAdded;
+    private boolean isBillGenerated;
 
 
 
@@ -78,7 +78,7 @@ public class Pizza {
 
         if(isBillGenerated == false){
             if(isCheeseAdded== true){
-                this.bill = this.bill + "Extra Cheese  Added: " + this.cheesePrice +"\n";
+                this.bill = this.bill + "Extra Cheese Added: " + this.cheesePrice +"\n";
 
             }
             if(isToppingsAdded== true){
