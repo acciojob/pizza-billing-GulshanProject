@@ -87,7 +87,7 @@ public class Pizza {
                 this.bill = this.bill + "Extra Toppings Added: " + this.toppingsPrice + "\n";
             }
             if(isTakeAwayAdded== true){
-                this.bill = this.bill + "Paperbag  Added: " + this.takeAwayPrice +"\n";
+                this.bill = this.bill + "Paperbag Added: " + this.takeAwayPrice +"\n";
             }
 
             this.bill = this.bill +"Total Price: "+ this.price +"\n";
