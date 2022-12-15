@@ -37,7 +37,7 @@ public class Pizza {
         this.isTakeAwayAdded= false;
         this.isToppingsAdded=false;
 
-        this.bill = "Base Price Of The Pizza"+ this.price+ "\n";
+        this.bill = "Base Price Of The Pizza: "+ this.price+ "\n";
         // your code goes here
     }
 
@@ -88,9 +88,10 @@ public class Pizza {
                 this.bill = this.bill + "Paperbag  Added: " + this.takeAwayPrice +"\n";
             }
 
-            this.bill = this.bill +"Total Price"+ this.price +"\n";
+            this.bill = this.bill +"Total Price: "+ this.price +"\n";
             isBillGenerated = true;
         }
+
         return this.bill;
     }
 }
